@@ -1,0 +1,111 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(135deg, #6D9DF5, #F1B6E7);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
+    margin-top: 0; 
+}
+
+.question-box {
+    width: 80%;
+    max-width: 600px;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.question-box:hover {
+    transform: scale(1.02);
+}
+
+
+.question {
+    font-size: 1.5em;
+    margin-bottom: 25px;
+    font-weight: bold;
+    color: #444;
+}
+
+.next-button {
+    padding: 12px 25px;
+    font-size: 1.3em;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.next-button:hover {
+    background-color: #007bb5;
+    transform: scale(1.1);
+}
+
+
+.option {
+    display: block;
+    margin: 15px auto;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #9ca89c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 60%;
+    transition: all 0.3s ease;
+}
+
+.option:hover {
+    background-color: #576358;
+    transform: scale(1.05); 
+}
+
+button.correct {
+    background-color: green;
+    color: white;
+    transform: scale(1.05); 
+}
+
+button.incorrect {
+    background-color: red;
+    color: white;
+    transform: scale(1.05);
+}
+
+
+button.correct,
+button.incorrect {
+    animation: bounce 0.3s ease-in-out; 
+}
+
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
