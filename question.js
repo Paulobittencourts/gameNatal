@@ -22,6 +22,6 @@ export const questions = [
     {
         question: "Assinale a alternativa que preenche corretamente a frase. '_ muitos anos, ela foi _ escola apenas _ tarde, pois havia algo importante _ tratar, mas acabou voltando _ cidade natal sem _ vontade de continuar.'",
         options: ["Há, à, à, a, à, a", "A, a, à, à, a, à", "Há, à, a, a, à, a", "Há, à, à, a, à, à"],
-        correct: 2
+        correct: 0
     }
 ];
