@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const questionElement = document.querySelector('.question');
     const optionsElement = document.getElementById('options');
-    const nextButton = document.getElementById('next-button');
 
     function renderQuestion() {
         const currentQuestion = quizGame.getCurrentQuestion();
@@ -26,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (isCorrect) {
                         optionButton.classList.add('correct'); 
                     } else {
-    
                         optionButton.classList.add('incorrect'); 
                         const correctOptionButton = Array.from(optionsElement.children).find(
                             button => button.textContent === currentQuestion.options[currentQuestion.correct]
@@ -40,13 +38,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         button.disabled = true;
                     });
 
-                    
                     setTimeout(() => {
                         if (quizGame.nextQuestion()) {
                             renderQuestion();
                         } else {
                             const result = quizGame.getFinalScore();
-                            alert(`Pontuação final: ${result.totalScore}\nPrêmio: ${result.prize}`);
+                            alert(`Acertos: ${result.totalScore}`);
                         }
                     }, 2000); 
                 };
@@ -56,16 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error("Opções não encontradas ou inválidas na pergunta.");
         }
     }
-
-    nextButton.onclick = () => {
-        if (quizGame.nextQuestion()) {
-            renderQuestion();
-        } else {
-            const result = quizGame.getFinalScore();
-            alert(`Pontuação final: ${result.totalScore}`);
-        }
-    };
-
 
     renderQuestion();
 });
