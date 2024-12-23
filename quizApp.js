@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
             renderQuestion();
         } else {
             const result = quizGame.getFinalScore();
-            alert(`Pontuação final: ${result.totalScore}\nPrêmio: ${result.prize}`);
+            alert(`Pontuação final: ${result.totalScore}`);
         }
     };
 
