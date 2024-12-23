@@ -1,52 +1,27 @@
 export const questions = [
     {
-        question: "Quantos dias há em um ano comum?",
-        options: ["365", "366", "364", "360"],
-        correct: 0
-    },
-    {
-        question: "Qual é o maior planeta do sistema solar?",
-        options: ["Terra", "Júpiter", "Marte", "Saturno"],
+        question: "Qual o plural de caráter?",
+        options: ["Carateres", "Caracteres", "Caraters", "Não tem plural"],
         correct: 1
     },
     {
-        question: "Qual é o nome do autor de 'Dom Casmurro'?",
-        options: ["Machado de Assis", "Monteiro Lobato", "José de Alencar", "Jorge Amado"],
+        question: "Um arco-íris possui 7 cores. Qual é a primeira, a do meio e a última?",
+        options: ["Vermelho, Verde, Violeta", "Laranja, Verde, Violeta", "Vermelho, Amarelo, Azul", "Violeta, Amarelo, Azul"],
         correct: 0
     },
     {
-        question: "Quanto é 5 x 6?",
-        options: ["30", "25", "35", "40"],
-        correct: 0
+        question: "Se 5 máquinas levam 5 minutos para produzir 5 itens, quanto tempo 100 máquinas levarão para produzir 100 itens?",
+        options: ["100 minutos", "50 minutos", "5 minutos", "1 minuto"],
+        correct: 2
     },
     {
-        question: "Qual é o estado brasileiro conhecido como 'Terra da Garoa'?",
-        options: ["São Paulo", "Rio de Janeiro", "Minas Gerais", "Paraná"],
-        correct: 0
+        question: "Sabendo que FP é igual a 9, e que HX é igual a 14, então quanto é DS??",
+        options: ["9", "12", "14", "17"],
+        correct: 2
     },
     {
-        question: "Quantos ossos tem o corpo humano adulto?",
-        options: ["206", "208", "210", "212"],
-        correct: 0
-    },
-    {
-        question: "Qual é a fórmula química da água?",
-        options: ["CO2", "H2O", "NaCl", "O2"],
-        correct: 1
-    },
-    {
-        question: "Qual país é conhecido como a terra do sol nascente?",
-        options: ["Japão", "China", "Coreia do Sul", "Vietnã"],
-        correct: 0
-    },
-    {
-        question: "Qual é o elemento químico mais abundante no universo?",
-        options: ["Hidrogênio", "Oxigênio", "Carbono", "Hélio"],
-        correct: 0
-    },
-    {
-        question: "Em que ano ocorreu a primeira transmissão oficial de TV no Brasil?",
-        options: ["1950", "1945", "1960", "1940"],
-        correct: 0
+        question: "Assinale a alternativa que preenche corretamente a frase. '_ muitos anos, ela foi _ escola apenas _ tarde, pois havia algo importante _ tratar, mas acabou voltando _ cidade natal sem _ vontade de continuar.'",
+        options: ["Há, à, à, a, à, a", "A, a, à, à, a, à", "Há, à, a, a, à, a", "Há, à, à, a, à, à"],
+        correct: 2
     }
 ];
