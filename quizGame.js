@@ -12,7 +12,7 @@ export class QuizGame{
     checkAnswer(selectedOption){
         const currentQuestion = this.getCurrentQuestion();
         if(selectedOption === currentQuestion.correct){
-            this.score += 5;
+            this.score += 1;
             return true;
         }
         return false;
